@@ -1,0 +1,6 @@
+print("Column Lists")
+print(data.columns.tolist())
+print("Column Datatypes")
+print(data.dtypes)
+print("Shape")
+print(data.shape)

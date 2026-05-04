@@ -1,0 +1,764 @@
+id: bbe2f901-05b6-48f5-b412-358cdf798057
+name: HackerEarth Hackathon
+project_id: 76b7e8b7-5a7c-4fa3-948b-26f4a7c7ce1d
+global_imports: []
+python_global_imports: ''
+r_global_imports: ''
+requirements: []
+linux_packages: []
+environment_variables: []
+is_public: true
+organization_id: 200ccd15-a40c-405d-8c7f-ed53247f3a05
+layers:
+- blocks:
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Analyzes skip_onboarding_form event frequency per user. Calculates
+      distribution statistics and identifies top patterns of how often users skip
+      the onboarding form.
+    height: 1000
+    id: 0380e66b-b2d0-4061-8282-2ee3419d4f15
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: skip_onboarding_frequency
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 12000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Counts how many power users and churned users used addon credits
+      on Day 0, segmenting usage patterns by user retention status.
+    height: 1000
+    id: 0813c9e7-786d-4b15-8987-51436f0d3d3a
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: addon_credits_analysis
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 7500
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Compares behavioral metrics between power users (30+ day lifespan)
+      and newer users (<30 days), showing percentage adoption rates and differences
+      for key engagement flags, sorted by largest disparities.
+    height: 1000
+    id: 09579d5c-7cfa-44ab-9534-a434d6ddf92a
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: user_behavior_comparison
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 5500
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Analyzes Day 0 signup activity patterns and their relationship to
+      long-term user retention. Segments users by initial event count to identify
+      which signup intensity levels predict continued engagement beyond 30 days.
+    height: 1000
+    id: 0e4a0872-7baa-446d-a16f-83d61e34505a
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: day0_retention_analysis
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 9000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Analyzes Day 0 credit limit exceeded events, counting unique affected
+      users across power and churned segments and calculating prevalence percentages
+      within each group.
+    height: 1000
+    id: 0edc65a3-fe7d-41aa-981f-ed14c2bdb78e
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: credits_exceeded_analysis
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 8000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Compares manual action ratios between power users and churned users
+      using overlapping histograms to visualize behavior differences.
+    height: 1000
+    id: 1888f1fa-1801-49d5-b8a2-d841f055194b
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: manual_ratio_histogram_viz
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 11000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Loads a CSV dataset into pandas and displays its structure (columns,
+      data types, and missing values).
+    height: 1000
+    id: 1933bd14-ecdd-4f34-bf38-b5d64f9872e8
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: pandas_import
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 0
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Analyzes Day 0 credit events for power and churned users, counting
+      instances of credits_exceeded and credits_below_1 events.
+    height: 1000
+    id: 201e0905-7209-4ca0-ab15-cc25452e1ba6
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: count_credit_events
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 7000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Displays a frequency count of all unique events in the dataset, showing
+      how many times each event type occurs.
+    height: 1000
+    id: 2555fd3d-5569-4613-8a33-252cb0ba8147
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: print_unique_events
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 3000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Analyzes user engagement milestones by calculating what percentage
+      of users become power users at each event threshold, showing retention correlation
+      with activity levels.
+    height: 1000
+    id: 2f5a7e9c-7ec4-41e6-bf42-e8679f6fcb45
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: event_threshold_power_user
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 12000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Compares first 5 meaningful user events between power users and churned
+      users. Filters out system events, ranks actions chronologically by user, and
+      displays the most common action at each rank for each cohort.
+    height: 1000
+    id: 3a4a9070-307d-42fe-a96b-5e805fe2ddb8
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: user_first_actions_analysis
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 12000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Preview the first few rows of a DataFrame containing 409K rows and
+      107 columns to inspect data structure and sample values.
+    height: 1000
+    id: 3b9d73f5-ed8f-4e5f-a014-1bb4eb798bfe
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: display_data_head
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 500
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Calculates user engagement metrics by comparing agent-driven actions
+      vs. manual actions, then compares manual action ratios between power users and
+      churned users.
+    height: 1000
+    id: 4ac224ac-51c5-483a-8a98-2c557a0bb896
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: user_action_ratio_analysis
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 10500
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: "Consolidates user identifiers by filling missing values hierarchically\
+      \ (prop_user_id \u2192 prop_userId \u2192 person_id) and compares unique user\
+      \ counts across the combined and original person ID fields."
+    height: 1000
+    id: 4ace4eea-59ab-4005-9d7f-a8b25c3d3be3
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: user_id_consolidation
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 2000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: 'Parses ISO8601 timestamps to UTC and extracts temporal features
+      (date, hour, day of week). Filters dataset to 19 key columns including events,
+      user properties, and geographic data. Output: 409k rows with null counts across
+      optional fields.'
+    height: 1000
+    id: 4bbc240c-ff6e-4579-a250-b550d2a75e47
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: parse_datetime_utc
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 1500
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: "Tracks onboarding funnel by counting unique users at each step\u2014\
+      from sign-up through form submission to canvas tour completion."
+    height: 1000
+    id: 4f07e6ba-77ee-4755-bb84-195802c449c2
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: onboarding_funnel_analysis
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 11500
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Maps engagement buckets to user IDs and segments data into low (1
+      event) and high (21-50 events) engagement groups, then displays top 10 events
+      for low-engagement users on Day 0.
+    height: 1000
+    id: 514b351b-bb7c-4090-b703-d2c724347714
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: map_bucket_events_analysis
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 9500
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Displays the top 10 events with the highest engagement on Day 0,
+      filtered for events occurring 21-50 times.
+    height: 1000
+    id: 5c82c8bd-d160-4e89-abb2-a6518348ced0
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: top_events_high_engagement
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 10000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Identifies and analyzes power users (active for 30+ days), showing
+      their adoption rates across 14 key platform features like onboarding, block
+      creation, apps, and agent usage.
+    height: 1000
+    id: 5d3538cf-7737-4d1d-892d-d305a554aa5a
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: power_user_analytics
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 5000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Trains a Random Forest classifier to predict power users vs non-power
+      users and displays classification metrics plus feature importances ranked by
+      impact.
+    height: 1000
+    id: 7b75b642-2cef-473e-992c-7c86f346eede
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: random_forest_classifier
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 13000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Classifies users as successful if they've been active for 7+ days
+      and performed at least one key action (ran block, created canvas, used agent,
+      published app, scheduled job, or bought credits). Outputs success counts and
+      rate percentage.
+    height: 1000
+    id: 83376e76-237f-47c7-bd8b-d8ac0f763bd1
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: user_success_metrics
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 4000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Compares feature importance from logistic regression vs random forest
+      models to identify top predictors of user retention. Visualizes agent usage
+      impact (AI agent actions as strongest retention signal), with separate analysis
+      of agent vs manual actions by cohort, and deep-dive breakdown of agent-related
+      feature coefficients.
+    height: 1000
+    id: 833de81c-5557-4c07-b8cc-9ebe50c0a34a
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: feature_importance_comparison
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 2000
+    y: 13000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Identifies power users and analyzes their first-day (Day 0) activity
+      patterns, counting event types to reveal what actions they performed immediately
+      after signup.
+    height: 1000
+    id: 860ca41e-0813-4c84-bfcd-e0b997ef0764
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: power_user_day0_analysis
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 6000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Aggregates user-level engagement metrics including event counts,
+      session data, credit usage, and lifespan. Computes feature adoption flags (onboarding,
+      block creation, publishing, etc.) and derives engagement KPIs like events-per-day.
+    height: 1000
+    id: 8916b742-3b66-4772-896c-0d045fcc4f19
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: user_stats_aggregation
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 3500
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Analyzes onboarding event patterns by comparing the first 5 events
+      of power users vs. churned users, identifying which event types are most common
+      at each step in the user journey.
+    height: 1000
+    id: 8dbf2d8c-bc64-4881-959b-08d9012fc2ec
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: event_rank_pattern_analysis
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 12000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Analyzes user lifespan distribution by generating statistical summary
+      and binning users into retention cohorts (1d, 1-3d, 3-7d, 7-14d, 14-30d, 30d+).
+    height: 1000
+    id: a5d55890-ba9f-4a06-959c-a9a13193cf4a
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: user_lifespan_analysis
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 4500
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Identifies and displays the top 15 events performed by churned non-power
+      users on their sign-up day.
+    height: 1000
+    id: af9554eb-22b8-4b4f-9771-4a6e68e6cb67
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: day0_churn_events
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 6500
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Splits event data into web and backend events based on session ID
+      presence, then displays counts and top 10 most common events for each category.
+    height: 1000
+    id: b9cbefa2-33dc-4e26-ab2f-feca4c3c2aa4
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: split_and_analyze_events
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 2500
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Builds a logistic regression model to identify power users. Preprocesses
+      21 behavioral features, scales them, trains on 80% of data with balanced class
+      weighting, and evaluates performance on test set with detailed classification
+      metrics and feature importance rankings.
+    height: 1000
+    id: bdbf957b-a95b-49d5-bc3e-e0ccf3922eb1
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: logistic_regression_power_user
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 12500
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: "Data-driven narrative analyzing 6,158 Zerve users to identify why\
+      \ only 2.6% retain beyond 30 days. Reveals AI Agent usage as the #1 behavioral\
+      \ differentiator (11.5\xD7 gap between retained vs. churned users), poor onboarding\
+      \ effectiveness, and credit exhaustion as churn accelerants. Provides ML-backed\
+      \ recommendations to improve Day 0 activation through agent-first onboarding\
+      \ and credit progression gates."
+    height: 1000
+    id: d18dcdaa-f1ea-4ed3-9b8d-74061a0ed146
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: zerve_user_retention_data_story
+    parent_id: null
+    properties: {}
+    status: 1
+    type: 4
+    variables: null
+    width: 1600
+    x: 0
+    y: 16000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Calculates and displays onboarding tour completion rates, comparing
+      power users against churned users to identify engagement differences between
+      user segments.
+    height: 1000
+    id: d4ea42dc-8928-4885-9003-995538b2a57f
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: tour_completion_by_user
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 12000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: "Displays dataset structure: lists all 107 columns, shows data types,\
+      \ and confirms dimensions (409.3K rows \xD7 107 columns). Useful for exploring\
+      \ dataset schema and confirming data loading."
+    height: 1000
+    id: d9837d4c-e5bc-4150-ab26-10b831136862
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: print_data_info
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 1000
+  - auto_size: false
+    canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    compute_settings: null
+    description: Calculates and compares the median number of events on Day 0 between
+      power users and churned users to identify behavioral differences.
+    height: 1000
+    id: fa6ec8d4-6069-408b-91ba-8381c2736229
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    name: median_events_day0
+    parent_id: null
+    properties: {}
+    status: 3
+    type: 1
+    variables: null
+    width: 1600
+    x: 0
+    y: 8500
+  canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+  edges:
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 1a64609a-3df5-44ed-afc5-c6aca34abe10
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 7b75b642-2cef-473e-992c-7c86f346eede
+    target: 833de81c-5557-4c07-b8cc-9ebe50c0a34a
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 22e81801-440e-4fdb-a80f-4d33304758ed
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 3b9d73f5-ed8f-4e5f-a014-1bb4eb798bfe
+    target: d9837d4c-e5bc-4150-ab26-10b831136862
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 26b1f72e-ee9e-4187-b52d-ca8ded36e703
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 0380e66b-b2d0-4061-8282-2ee3419d4f15
+    target: 2f5a7e9c-7ec4-41e6-bf42-e8679f6fcb45
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 2c25cee7-04f4-423b-96bc-48a124755fec
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 83376e76-237f-47c7-bd8b-d8ac0f763bd1
+    target: a5d55890-ba9f-4a06-959c-a9a13193cf4a
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 3baf03cc-cd6b-4d3a-9c7b-4844409d3ae9
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 0e4a0872-7baa-446d-a16f-83d61e34505a
+    target: 514b351b-bb7c-4090-b703-d2c724347714
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 4985729b-2db3-4120-860d-64505a6ff573
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 1933bd14-ecdd-4f34-bf38-b5d64f9872e8
+    target: 3b9d73f5-ed8f-4e5f-a014-1bb4eb798bfe
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 4c270c00-28b3-4611-8772-1f4b832f497e
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: fa6ec8d4-6069-408b-91ba-8381c2736229
+    target: 0e4a0872-7baa-446d-a16f-83d61e34505a
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 4daf2f3a-e15f-4031-85e9-a9bbf92048fd
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 09579d5c-7cfa-44ab-9534-a434d6ddf92a
+    target: 860ca41e-0813-4c84-bfcd-e0b997ef0764
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 5315cdd8-57a6-409d-aee1-eb01c8de8a1c
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 201e0905-7209-4ca0-ab15-cc25452e1ba6
+    target: 0813c9e7-786d-4b15-8987-51436f0d3d3a
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 623faf8c-98ad-494f-ba7f-52692dd1751a
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 0813c9e7-786d-4b15-8987-51436f0d3d3a
+    target: 0edc65a3-fe7d-41aa-981f-ed14c2bdb78e
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 63310d71-2b08-42c5-8c5c-083bfb8fe354
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 514b351b-bb7c-4090-b703-d2c724347714
+    target: 5c82c8bd-d160-4e89-abb2-a6518348ced0
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 6af69856-c2b9-4230-8c09-5831316883f2
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 0edc65a3-fe7d-41aa-981f-ed14c2bdb78e
+    target: fa6ec8d4-6069-408b-91ba-8381c2736229
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 6ca62d02-d002-4c49-8465-63c9707397f1
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 4f07e6ba-77ee-4755-bb84-195802c449c2
+    target: d4ea42dc-8928-4885-9003-995538b2a57f
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 6eb0c8b2-5939-4925-9c82-67aca3d7f767
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 4ac224ac-51c5-483a-8a98-2c557a0bb896
+    target: 1888f1fa-1801-49d5-b8a2-d841f055194b
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 7b64a852-15dd-4f2f-9be2-d9a3b331700f
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 8dbf2d8c-bc64-4881-959b-08d9012fc2ec
+    target: 3a4a9070-307d-42fe-a96b-5e805fe2ddb8
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 8f7dab07-743f-47c9-9c5e-a7d6345f03f6
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 2555fd3d-5569-4613-8a33-252cb0ba8147
+    target: 8916b742-3b66-4772-896c-0d045fcc4f19
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: 9a0bba49-8482-4c7b-8b95-f5b9760429d7
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: bdbf957b-a95b-49d5-bc3e-e0ccf3922eb1
+    target: 7b75b642-2cef-473e-992c-7c86f346eede
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: a36a4e41-c5a2-4b5a-9c0a-e340ec3f06bd
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 4ace4eea-59ab-4005-9d7f-a8b25c3d3be3
+    target: b9cbefa2-33dc-4e26-ab2f-feca4c3c2aa4
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: ab5a44d4-15c8-42ec-94ba-abbec998ce91
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: b9cbefa2-33dc-4e26-ab2f-feca4c3c2aa4
+    target: 2555fd3d-5569-4613-8a33-252cb0ba8147
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: b07952ec-c6c2-4747-a9b0-0e1c6465812d
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: d4ea42dc-8928-4885-9003-995538b2a57f
+    target: 8dbf2d8c-bc64-4881-959b-08d9012fc2ec
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: b1644ae3-9488-422e-8f34-48fd9d870aec
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 8916b742-3b66-4772-896c-0d045fcc4f19
+    target: 83376e76-237f-47c7-bd8b-d8ac0f763bd1
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: b2b3744e-79db-4378-b56d-4db86aea7c0b
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: d9837d4c-e5bc-4150-ab26-10b831136862
+    target: 4bbc240c-ff6e-4579-a250-b550d2a75e47
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: b5330dcf-2a7b-4b16-8d49-839133a67755
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: a5d55890-ba9f-4a06-959c-a9a13193cf4a
+    target: 5d3538cf-7737-4d1d-892d-d305a554aa5a
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: bdda5014-2bc7-4ca0-b059-8148b4fff786
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 860ca41e-0813-4c84-bfcd-e0b997ef0764
+    target: af9554eb-22b8-4b4f-9771-4a6e68e6cb67
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: c309b067-e68b-4463-90aa-086bf6fc3ac1
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 1888f1fa-1801-49d5-b8a2-d841f055194b
+    target: 4f07e6ba-77ee-4755-bb84-195802c449c2
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: c70dd72f-af16-4f61-b3c1-d636aefaa916
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 5d3538cf-7737-4d1d-892d-d305a554aa5a
+    target: 09579d5c-7cfa-44ab-9534-a434d6ddf92a
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: ed58dcea-f89a-42e0-909a-86e61c5587e9
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 2f5a7e9c-7ec4-41e6-bf42-e8679f6fcb45
+    target: bdbf957b-a95b-49d5-bc3e-e0ccf3922eb1
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: eeb53a6d-206f-45ba-b377-2edb0d1a9797
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 4bbc240c-ff6e-4579-a250-b550d2a75e47
+    target: 4ace4eea-59ab-4005-9d7f-a8b25c3d3be3
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: f5147334-78c8-4074-9bff-74a1ad9dc378
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: af9554eb-22b8-4b4f-9771-4a6e68e6cb67
+    target: 201e0905-7209-4ca0-ab15-cc25452e1ba6
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: f71c2311-9758-4961-afa7-98d27d20110e
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 3a4a9070-307d-42fe-a96b-5e805fe2ddb8
+    target: 0380e66b-b2d0-4061-8282-2ee3419d4f15
+  - canvas_id: bbe2f901-05b6-48f5-b412-358cdf798057
+    id: fd15d7ec-91e9-4c6f-9825-13e0fbf56884
+    layer_id: 22e588d5-5982-4c3a-a775-50b075952d2f
+    source: 5c82c8bd-d160-4e89-abb2-a6518348ced0
+    target: 4ac224ac-51c5-483a-8a98-2c557a0bb896
+  id: 22e588d5-5982-4c3a-a775-50b075952d2f
+  name: Development
+  type: 1
+assets: []
