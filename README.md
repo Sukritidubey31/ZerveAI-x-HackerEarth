@@ -2,8 +2,6 @@
 
 ## A Data Story About Zerve User Retention
 
----
-
 ## Executive Summary
 
 Analysed **6,158 Zerve users** across **409,300 raw events** to understand what separates the 2.6% who become long-term power users from the 97.4% who churn within their first 30 days. The retention gap is stark, predictable, and almost entirely explained by a single behavioural fork: whether a user engages the AI Agent or not. Power users fire an average of **134 agent actions** versus just **12 for churned users** — an **11.5× differential** that two independent machine learning models (Logistic Regression and Random Forest) both flag as a top-4 retention predictor. The data tells a clear story: Zerve's highest-value feature is being systematically underexposed to the users who need it most, and Day 0 is where the game is won or lost.
